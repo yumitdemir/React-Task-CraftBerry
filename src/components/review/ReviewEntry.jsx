@@ -83,11 +83,11 @@ function ReviewEntry({userReview}) {
                 </div>
                 <div className={"flex w-full justify-end items-center gap-[22px] leading-[24px] text-typography-light"}>
                     <span>Was this helpful?</span>
-                    <div className={"flex gap-[8px]  text-typography-dark cursor-pointer"} onClick={handleLikeClick}>
+                    <div className={"flex gap-[8px]  text-typography-dark cursor-pointer select-none"} onClick={handleLikeClick}>
                         <LiaThumbsUpSolid size={24}/>
                         <span>{userReview?.like_count}</span>
                     </div>
-                    <div className={"flex gap-[8px] text-typography-dark cursor-pointer"} onClick={handleDislikeClick}>
+                    <div className={"flex gap-[8px] text-typography-dark cursor-pointer select-none"} onClick={handleDislikeClick}>
                         <LiaThumbsDownSolid size={24}/>
                         <span>{userReview?.dislike_count}</span>
                     </div>

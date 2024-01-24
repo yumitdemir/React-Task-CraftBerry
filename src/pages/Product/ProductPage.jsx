@@ -16,7 +16,7 @@ function ProductPage(props) {
     }
 
     return (
-        <div className={"container mx-auto px-4 py-8"}>
+        <div className={"container mx-auto px-4 py-[138px]"}>
             {product !== null ? <>
                 <ProductDetail/>
                 <ProductReviews/>
